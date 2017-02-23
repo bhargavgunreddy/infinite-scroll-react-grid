@@ -10,7 +10,10 @@
 
 // app.listen(app.get('port'), app.get('url'));
 
+var webpack = require('webpack');
+
 var config = require("./webpack.config.js");
+
 var url = process.env.IP || "http://localhost";
 var portNum = process.env.PORT || 8080;
 
