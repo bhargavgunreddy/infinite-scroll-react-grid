@@ -11,6 +11,7 @@
 // app.listen(app.get('port'), app.get('url'));
 
 var webpack = require('webpack');
+require('webpack-dev-server');
 
 var config = require("./webpack.config.js");
 
