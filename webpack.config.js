@@ -6,7 +6,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
 
 	entry: {
-				app: './grid.js'
+				app: ['./grid.js']
 				
 			},
 	output: {
