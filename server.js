@@ -16,5 +16,5 @@ var portNum = process.env.PORT || 8080;
 
 config.entry.app.unshift("webpack-dev-server/client?"+ url +":" + portNum +"/");
 var compiler = webpack(config);
-var server = new WebpackDevServer(compiler, {...});
+var server = new WebpackDevServer(compiler);
 server.listen(portNum);
