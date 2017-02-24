@@ -3,9 +3,13 @@ var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
+
 module.exports = {
 
 	entry: {
+				
+				lib:['./node_modules/jquery/dist/jquery.min.js',
+					 './node_modules/bootstrap/dist/js/bootstrap.min.js'],
 				app: ['./grid.js']
 				
 			},
@@ -28,8 +32,9 @@ module.exports = {
 		new webpack.ProvidePlugin({
 	    	'ReactDOM':   'react-dom',
 	    	'React':     'react',
-	    	'$': 'jquery'
-
+	    	'$': 'jquery',
+	    	'jQuery': 'jquery',
+	    	'jquery': 'jquery'
 	    	
 	  	}),
 		new HtmlWebpackPlugin({  // Also generate a test.html
