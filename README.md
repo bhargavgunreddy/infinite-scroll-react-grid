@@ -12,9 +12,9 @@ Demo desciption:
 
 1. Grid is built out of reusable components using React.
 
-2. Each cell, row constitues a component, whihc builds up inot final grid component.
+2. Each cell, row constitues a component, which builds up into final grid component.
 
-3. Data to eahc component is passed through parent i.e. from row to grid and from grid to row
+3. Data to eacc component is passed through parent i.e. from row to grid and from grid to row
 
 4. When a component updates the state is reset which results in the component being rerendered with updated value.
 
